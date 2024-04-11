@@ -17,5 +17,4 @@ public interface BoardService {
 	public int getVideoCount();
 	
 	
-	
 }

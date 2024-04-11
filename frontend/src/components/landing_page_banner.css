@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    margin: 0 100px;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+}
+
+.logo, .navigation, .buttons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.navigation {
+    justify-content: center; 
+}
+
+.buttons {
+    justify-content: center; 
+    
+}
+
+.buttons button {
+    margin: 0 5px;
+
+}
+
+.buttons button:first-child {
+    margin-left: 0;
+}
+
+.buttons button:last-child {
+    margin-right: 0;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto; 
+}
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.container > div {
+    flex: 1; 
+    text-align: center; 
+}
+
+.navigation span{
+    margin: 0 10px; 
+    color: black; 
+    text-decoration: none; 
+}
+
+#banner {
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 100px;
+}
+
+#banner img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

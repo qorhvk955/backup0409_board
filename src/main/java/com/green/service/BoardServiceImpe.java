@@ -24,12 +24,9 @@ public class BoardServiceImpe implements BoardService {
 	@Override
 	public List<BoardVO> getMainVrList() {
 		
-		Sort sort = Sort.by("regDate").descending();
-		
-		Pageable pageable = PageRequest.of(0, 3, sort);
-		
-		Page<Board> result = br.getBoardPage(2, pageable);
-		
+		Sort sort = Sort.by("regDate").descending();		
+		Pageable pageable = PageRequest.of(0, 3, sort);		
+		Page<Board> result = br.getBoardPage(2, pageable);		
 		List<BoardVO> list = new ArrayList<>();
 		
 		

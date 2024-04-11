@@ -1,0 +1,184 @@
+
+.main-section{
+    margin: 0 20%;
+
+}
+
+.area-warp {
+    display: flex; 
+}
+
+.left-area {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+}     
+
+.right-area {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    flex: 1; 
+    margin-left: auto; 
+}
+
+.title {
+    font-weight: bold; 
+    text-align: left;
+    flex: 1;
+    margin: 20px 0;
+}
+
+.content {
+    flex : 1;
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+.see-more-button-wrapper {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.button {
+    padding: 5px 10px; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.card-warp{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+}
+
+
+
+.card {
+	position: relative;	
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden;
+    width: 18rem;
+    background-color: white;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%; 
+    display: block; 
+}
+
+.card img:hover {
+    filter:brightness(0.5);
+}
+
+.card-hover-info {
+    display: none;
+    position: absolute;
+    top: 0; /* 상단에 위치시킵니다 */
+    left: 0; /* 왼쪽에 위치시킵니다 */
+    width: 100%; /* 이미지 너비와 동일하게 합니다 */
+    color: white;
+    padding: 8px;
+    border-radius: 0;
+    text-align: left; 
+}
+
+.card:hover .card-hover-info {
+  display: block; /* 카드에 마우스를 올렸을 때만 보임 */
+}
+
+
+.card-content {
+    padding : 15px; 
+    padding-bottom: 0px;
+    
+}
+
+.card-date {
+    color: grey; 
+    font-size: 0.9em; 
+    margin-bottom: 10px; 
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    text-overflow: ellipsis; 
+    color: #333; 
+}
+.card-stats {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 15px; 
+}
+.card-stats span {
+    display: flex; 
+    align-items: center; 
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: #333;     
+    padding: 10px 5px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 0.85em; 
+}
+.btn:hover {
+    background-color: #333;
+    color:#eee
+}
+
+.see-more {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 8px; 
+    color: #0000EE;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); 
+    
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #e2e2e2;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+

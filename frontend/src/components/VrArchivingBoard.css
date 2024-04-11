@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.vrArchivingBoard-wrap {
+    margin: 0 200px;
+    font-family: Arial, sans-serif;
+}
+
+.board-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+}
+
+.board-header img {
+    width: 100%; 
+    height: auto;
+}
+
+.year-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.year-button {
+    border: none;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 30px;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border: 1px solid #ddd;
+}
+
+.year-button:hover {
+    background-color: #ddd;
+
+}
+
+.year-button:nth-child(1) {
+    border: 1px solid blue;
+    color: blue;
+    padding: 5px 10px;
+}
+
+      
+.VrArchiving{
+    margin: 0 20%;
+
+}
+
+.area-warp {
+    display: flex; 
+}
+
+.left-area {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+}     
+
+.right-area {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    flex: 1; 
+    margin-left: auto; 
+}
+
+.title {
+    font-weight: bold; 
+    text-align: left;
+    flex: 1;
+    margin: 20px 0;
+}
+
+.content {
+    flex : 1;
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+.see-more-button-wrapper {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.button {
+    padding: 5px 10px; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.year-card-wrap{
+    display: flex;
+    margin: 0 20%;
+}
+
+.year-card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    text-overflow: ellipsis; 
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 10px 15px;        
+}
+
+.card-wrap {
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin: 10px;
+    max-width: 1200px; 
+}
+
+
+.card-year {
+    background-color: #0000EE;
+    color: white;
+    padding: 2px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.card-title {
+    margin: 5px 0px;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.card-text {
+    margin: 0;
+    display: -webkit-box;
+    font-size: 0.95em;
+    color: #333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em; 
+    max-height: 2.4em; 
+}
+
+
+.card-button {
+    margin: 5px 0px;
+
+    background-color: #fff;
+    color:  #0000EE;
+    border: none;
+    padding: 5px 5px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.85em;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.card-button:hover {
+    background-color: #ddd;
+}
+
+.center-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-wrap {
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; 
+    margin: 0 200px;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pagination a {
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.pagination a.active {
+    background-color: #000;
+    color: #fff;
+}
